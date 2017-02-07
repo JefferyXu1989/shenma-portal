@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="shenma-portal:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="shenma-portal.war">
+      <element id="artifact" artifact-name="shenma-portal:war exploded" />
+    </root>
+  </artifact>
+</component>

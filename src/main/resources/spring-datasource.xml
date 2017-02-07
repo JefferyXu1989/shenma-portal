@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSourceBase" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+
+        <property name="url" value="${oracle.base.jdbc.url}"/>
+
+        <property name="driverClassName" value="${oracle.base.jdbc.driverClass}"/>
+
+        <property name="username" value="${oracle.base.jdbc.user}"/>
+        <property name="password" value="${oracle.base.jdbc.password}"/>
+
+        <!--<property name="filters" value="stat" />
+
+        <property name="maxActive" value="${datasource.maxActive}" />
+        <property name="initialSize" value="${datasource.initialSize}" />
+        <property name="maxWait" value="${datasource.maxWait}" />
+        <property name="minIdle" value="${datasource.minIdle}" />
+
+        <property name="timeBetweenEvictionRunsMillis" value="${datasource.timeBetweenEvictionRunsMillis}" />
+        <property name="minEvictableIdleTimeMillis" value="${datasource.minEvictableIdleTimeMillis}" />
+
+        <property name="testWhileIdle" value="${datasource.testWhileIdle}" />
+        <property name="validationQuery" value="${datasource.validationQuery}" />
+        <property name="testOnBorrow" value="${datasource.testOnBorrow}" />
+        <property name="testOnReturn" value="${datasource.testOnReturn}" />
+
+        <property name="poolPreparedStatements" value="${datasource.poolPreparedStatements}" />
+        <property name="maxOpenPreparedStatements" value="${datasource.maxOpenPreparedStatements}" />-->
+    </bean>
+
+</beans>
+
+
